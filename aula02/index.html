@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="esquerda">
+            <h5> Get started</h5>
+            <label for="name">  Name  </label>
+            <input type="text" name="name" id="name" placeholder="Type your name">
+            <!-- placeholder é o nome que fica dentro da caixa de input como um "placeholder" -->
+            <label for="email"> E-mail   </label>
+            <input type="email" name="email" id="email" placeholder="Type your e-mail adress">
+            <label for="pass">  Password </label>
+            <input type="password" name="pass" id="pass" placeholder="Type password">
+            <div class="opcoes">    
+                <button> Sign up </button>
+                <a href="https://github.com" target="_blank">Sign in  </a>
+                <!-- tag a é a ancora que leva para outro site -->
+                <!-- target:"_blank" faz a ancora abrir uma nova aba com o link -->
+            </div>
+            <div class="termos">
+                <input type="checkbox" name="" id="check">
+                <p>I agree and accept the 
+                    <a href="https://docs.github.com/pt/site-policy/github-terms/github-terms-of-service" target="_blank">
+                    terms of service
+                    </a> 
+                .
+                </p>
+            </div>
+        </div>
+        <div class="direita">
+                <img src="./sign-up-animate.svg" width="400px" alt="imagem-animada">
+                <!-- src == source -->
+        </div>
+    </div>
+</body>
+</html>
