@@ -7,9 +7,9 @@
 //exibir não pode se alistar 
 
 const user = {
-    nome:"erliza",
-    idade: 29 ,
-    genero :"feminino",
+    nome:"ramiro",
+    idade: 27 ,
+    genero :"masculino",
     cidade:"fortaleza"
 
 }

@@ -2,7 +2,7 @@
 //objeto chamado user com propriedades nome, idade e cidade
 //modelo -> const objeto = {propriedade1, propriedade2, propriedade3...}
 const user = {
-    nome: "Samuel",
+    nome: "ramiro",
     idade: 27 ,
     cidade: "Fortaleza"
 }
