@@ -1,0 +1,62 @@
+'<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link com tailwind -->
+    <!-- no tailwind, toda alteração de estilo é feita pelo "class"-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Calculadora de aluguel</title>
+</head>
+<body>
+    <div class="w-full h-screen bg-blue-950 flex flex-col items-center pt-[30px]">
+        <h1 class="text-[30px] text-[#FFFB00FF] font-bold">Calculadora aluguel de carros</h1>
+        <p class="text-[#FFFFFFFF] text-[20px]">Calcule facilmente o valor da diária do seu carro alugado com base nos dias e quilômetros rodados</p>
+        <div class="w-[400px] h-auto flex flex-col bg-[#686868FF] rounded-md mt-6">
+            <div class="w-full h-[10%] flex justify-center text-white">
+                <h1 class="text-[20px] font-bold ">Calculadora de diária</h1>
+            </div>
+            <div class="w-full h-[90%] flex flex-col justify-center p-[15px]">
+                <label for="dia" class="font-bold text-[#ffffffff]">Dias de aluguel</label>
+                <!-- parametro "border" indica o tamanho da borda. Se deixar em branco, entende-se 1px -->
+                <input type="number" id="dia" class="w-full rounded-[5px] border border-[#cccccc]">
+                <label for="km" class="font-bold text-[#ffffffff] mt-4">Quilometros rodados</label>
+                <input type="number" id="km" class="w-full rounded-[5px] border border-[#cccccc]">
+                <label for="categoria" class="font-bold text-[#ffffffff] mt-4">Tipo de veículo</label>
+                <select id="categoria" class="w-full rounded-[5px] border border-[#cccccc] text-[#ffffffff] bg-[#686868FF]">
+                    <option value="economico">Econômico</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="luxo">Luxo</option>
+                </select>
+                <button class="w-full p-2 rounded-md bg-blue-950 text-white mt-4 cursor-pointer" id="calcular">Calcular</button>
+                <div class="w-full bg-gray-200 mt-8 rounded-lg p-2">
+                    <h4 class="font-bold text-[18px]">Resultado</h4>
+                    <div class="w-full flex justify-between ">
+                        <p>Valor da diaria:</p>
+                        <p id="result-diaria"></p>
+                    </div>
+                    <div class="w-full flex justify-between">
+                        <p>Custo das diárias <span id="total-dias"></span>:</p>
+                        <p id="result-total-dias"></p>
+                    </div>
+                    <div class="w-full flex justify-between">
+                        <p>Valor por Km:</p>
+                        <p id="result-km"></p>
+                    </div>
+                    <div class="w-full flex justify-between">
+                        <p>Custo por Km <span id="total-kms"></span>:</p>
+                        <p id="result-total-kms"></p>
+                    </div>
+                    <div class="w-full flex justify-between border-t border-gray-400">
+                        <p class="font-bold">Valor total:</p>
+                        <p id="result-total"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- link com javascript -->
+        <script src="./script.js"></script>
+
+    </div>
+</body>
+</html>
